@@ -104,10 +104,10 @@ export CC=clang
 export CXX=clang++
 
 # Clone meson
-git clone --depth=1 --branch 1.3.1 https://github.com/mesonbuild/meson.git
+git clone --depth=1 --branch 1.4.1 https://github.com/mesonbuild/meson.git
 
 # Build and install DRM
-git clone --depth=1 --branch libdrm-2.4.119 https://gitlab.freedesktop.org/mesa/drm.git
+git clone --depth=1 --branch libdrm-2.4.122 https://gitlab.freedesktop.org/mesa/drm.git
 cd drm
 
 mkdir Build
@@ -144,7 +144,7 @@ ninja install
 cd /root
 
 # Build and install mesa
-git clone --depth=1 --branch mesa-24.1.0 https://gitlab.freedesktop.org/mesa/mesa.git
+git clone --depth=1 --branch main https://gitlab.freedesktop.org/mesa/mesa.git
 cd mesa
 mkdir Build
 mkdir Build_x86
