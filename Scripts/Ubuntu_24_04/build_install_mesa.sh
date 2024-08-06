@@ -153,7 +153,7 @@ mkdir Build_x86
 sed -i 's/native : true/native : not meson.can_run_host_binaries()/g' src/asahi/clc/meson.build
 
 # Iris, anv, and Asahi disabled because it fails to find opencl-c-base.h for some reason.
-export GALLIUM_DRIVERS="r300,r600,radeonsi,nouveau,virgl,svga,swrast,kmsro,v3d,vc4,freedreno,etnaviv,tegra,lima,panfrost,zink"
+export GALLIUM_DRIVERS="r300,r600,radeonsi,nouveau,virgl,svga,swrast,v3d,vc4,freedreno,etnaviv,tegra,lima,panfrost,zink,llvmpipe"
 export VULKAN_DRIVERS="amd,broadcom,freedreno,panfrost,swrast,virtio,nouveau"
 
 # Needed for rusticl
