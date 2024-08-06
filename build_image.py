@@ -233,7 +233,7 @@ def Stage1(CacheDir, RootFSDir, config_json):
         '-drive',
         'file=' + RootFSDir + '/VMData.img' + ',format=qcow2',
         '-m',
-        '32G',
+        '16G',
         '-smp',
         NumCores,
         '-enable-kvm',
